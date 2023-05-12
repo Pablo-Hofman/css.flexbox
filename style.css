@@ -13,17 +13,17 @@
  } 
 
  .child-box:nth-of-type(2) {
-   background-color: rgb(21, 4, 252);
+   background-color: rgb(95, 93, 131);
  } 
 
  .child-box:nth-of-type(3) {
-   background-color: rgb(255, 0, 212);
+   background-color: rgb(255, 102, 0);
  } 
 
  .parent-box {
     display: flex;
-    background-color: rgb(105, 87, 87);
-    padding: 40px 20px 20px 20px; /*shorthand para padding-*/
+    background-color: rgb(165, 164, 164);
+    padding: 40px 20px 40px 20px; /*shorthand para padding-*/
  }
 
  .parent-box > p {
@@ -31,11 +31,39 @@
     margin-top: -25px;
     left: 30px;
  }
+ 
+ #jc-flex-start .parent-box{
+  justify-content:flex-start;
 
-#jc-centro .parent-box{
-   justify-content: center;
  }
+
+#jc-center .parent-box{
+   justify-content: center;
+
+ }
+ 
  #jc-flex-end .parent-box{
    justify-content: flex-end;
 
+ }
+ #jc-space-between .parent-box{
+  justify-content: space-between;
+ }
+ #jc-space-around .parent-box{
+  justify-content: space-around;
+ }
+ #jc-space-everly .parent-box{
+  justify-content: space-evenly;
+ }
+ #ai-flex-start .parent-box{
+  align-items: flex-start;
+  flex-direction: column;
+ }
+ #ai-center .parent-box{
+  align-items: center;
+  flex-direction: column;
+ }
+ #ai-flex-end .parent-box{
+  align-items: flex-end;
+  flex-direction: column;
  }
